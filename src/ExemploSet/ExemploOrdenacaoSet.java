@@ -84,7 +84,6 @@ class Serie implements Comparable<Serie> {
             return true;
         if (obj == null || getClass() != obj.getClass())
             return false;
-        Serie serie = (Serie) obj;
         return super.equals(obj);
     }
 
