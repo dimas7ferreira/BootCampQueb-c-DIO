@@ -41,12 +41,12 @@ public class Exercicio3 {
 
         System.out.println("--\tOrdem número telefone\t--");
         //precisamos organizar os valores. Logo:
-        Set<Map.Entry<Integer, Contato>> set = new TreeSet<>(new ComparatorOrdemNumerica());
-        set.addAll(agenda.entrySet());
-        for (Map.Entry<Integer, Contato> entry: set) {
-            System.out.println(entry.getKey() + " - " + entry.getValue().getNumero() +
-                    ": " +entry.getValue().getNome());
-        }
+        Set<Map.Entry<Integer, Contato>> set new TreeSet<>(new Comparator<Map.Entry<Integer, Contato>>(){
+            @Override
+            public int compare(Map.Entry<Integer, Contato> contatoEntry, Map.Entry<Integer, Contato> t1){
+                return 0;
+            }
+        });
 
         System.out.println("--\tOrdem nome contato\t--");
         //precisamos organizar os valores. Logo:
