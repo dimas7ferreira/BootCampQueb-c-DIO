@@ -30,14 +30,14 @@ public class ExemploMap {
         System.out.println("Exiba os consumo dos carros ");
         Collection<Double> consumos = carrosPopulares.values();
         
-        System.out.println("Exiba o modelo mais economico e seu consumo");
-        Double consumoMaisEficiente = Collection.max(carrosPopulares.values());
-        Set<Map.Entry <String, Double>> enries = carrosPopulares.entrySet();
-        String modeloMaisEficiente = "";
-        for(Map.Entry <String, Double> entry : enries){
-            if(entry.getValue().equals(consumoMaisEficiente)) modeloMaisEficiente = entry.getKey();
-        }
-
+        //System.out.println("Exiba o modelo mais economico e seu consumo");
+      //  Double consumoMaisEficiente = Collection.max(carrosPopulares.values());
+        //Set<Map.Entry <String, Double>> enries = carrosPopulares.entrySet();
+       // String modeloMaisEficiente = "";
+      //  for(Map.Entry <String, Double> entry : enries){
+      //      if(entry.getValue().equals(consumoMaisEficiente)) modeloMaisEficiente = entry.getKey();
+      //  }
+        
 
         System.out.println("Exiba o modelo menos economico e seu consumo");
         Double consumoMenosEFeciente = Collections.min(carrosPopulares.values());
